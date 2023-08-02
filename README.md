@@ -1,18 +1,33 @@
-# Astro Starter Kit: Basics
 
-```
-npm create astro@latest -- --template basics
-```
+# Guillermo Dean's Landing Page
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Welcome to Guillermo Dean's Landing Page! This page serves as a brief introduction to my professional background, hobbies, and links to my web development projects and some of my friends' projects. The landing page has gone through two revisions, and here's an overview of each version:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 1️⃣First Revision (Node.js App in Docker Container)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+The initial version of the landing page was built as a Node.js application running inside a Docker container. It was deployed on an AWS EC2 instance using PM2 as the process manager. This version served as a starting point to showcase my work and interests.
 
-## 🚀 Project Structure
+### Deployment Instructions:
+
+1. Clone the repository.
+2. Build the Docker image using the provided Dockerfile.
+3. Run the Docker container and map the required ports.
+4. Access the landing page via the public IP address or domain of the AWS EC2 instance.
+
+![Static Badge](https://img.shields.io/badge/Guillermo-blue?logo=github&link=https%3A%2F%2Fgithub.com%2Fguillermodean%2FGuillermo)
+
+## 2️⃣Second Revision (Astro Framework in AWS S3 Bucket)
+
+The landing page has undergone a significant update in the second revision. I have reimagined the page using the Astro framework, taking advantage of its modern development features and performance benefits. To enhance the scalability and simplicity of deployment, the new version will be hosted on an AWS S3 bucket.
+
+### Deployment Instructions:
+
+1. Build the Astro application using the provided configurations.
+2. Upload the generated static files to an AWS S3 bucket.
+3. Configure the S3 bucket for public access and website hosting.
+4. Access the landing page using the S3 bucket URL.
+
+### 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
@@ -21,8 +36,6 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── public/
 │   └── favicon.svg
 ├── src/
-│   ├── components/
-│   │   └── Card.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
@@ -30,13 +43,8 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
+### 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -49,6 +57,28 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## Contents of the Landing Page:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Job Experience Description:
+
+I will provide a concise overview of my professional experience, highlighting key achievements and skills in the web development industry.
+
+### Hobbies:
+
+Apart from my passion for coding and web development, I will share some of my hobbies and interests. This section aims to add a personal touch to the landing page.
+
+### Links to Friends' Projects:
+
+I believe in collaboration and supporting fellow developers. Therefore, I will include links to some exciting projects created by my friends. Feel free to explore their work and show them some love!
+
+### Web Development Projects:
+
+This section will showcase some of my web development projects. You can find links to live demos, GitHub repositories, and brief descriptions of each project.
+
+## Contact Information:
+
+If you have any questions, feedback, or opportunities, don't hesitate to contact me. You can find my contact details on the landing page.
+
+Thank you for visiting my landing page! I hope you find it informative and enjoyable.
+
+
