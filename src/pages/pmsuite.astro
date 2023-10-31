@@ -1,0 +1,190 @@
+---
+import Layout from "../layouts/Layout.astro";
+title: "PM Suite Project";
+description: "A collaboration journey with PM Suite";
+---
+
+<Layout title="PM-Suite">
+  <!-- src/pages/pmsuite.astro -->
+
+  <main class="main front">
+    <section class="project-section project">
+      <div class="mt-5 p-3">
+        <h1>PM SUITE</h1>
+        <div class="row flex ">
+          <div class="col">
+            <p>
+              Welcome to the PM Suite project page! Here, we embark on a journey
+              of collaboration, friendship, and organized chaos. The PM Suite is
+              not just a suite of scripts; it's a testament to our coding
+              adventures and the brilliance of chaos theory.
+            </p>
+            <h2>The Beginning</h2>
+            <p>
+              The project started as a humble idea and evolved into a suite of
+              tools that defy the ordinary. From organizing desktops to managing
+              tasks, PM Suite is a collection of scripts that make life a bit
+              more interesting.
+            </p>
+            <h2>Friendship and Collaboration</h2>
+            <p>
+              PM Suite is not just about code; it's about the camaraderie and
+              friendship that fueled its development. The collaboration behind
+              the scenes is what makes PM Suite truly special.
+            </p>
+            <h2>Explore the Features</h2>
+            <ul>
+              <li>Organize Desktop</li>
+              <li>List Organization Folder</li>
+              <li>Pomodoro Timer</li>
+              <li>Tasks Management</li>
+              <li>Encrypt and Decrypt</li>
+            </ul>
+          </div>
+        <div class="col">
+          <p>
+            <img src="/img/readme.png" alt="PM Suite Project Image" class="main-image" />
+          </p>
+        </div>
+      </div>
+    
+    </section>
+    <div class="row flex p-3">
+      <div class="col banner">
+        <p>Enjoying PM Suite? Support the project by buying us a coffee!</p>
+        <a
+          href="https://www.buymeacoffee.com/guillermodf"
+          target="_blank"
+          class="buyme-button"
+        >
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            alt="Buy Me A Coffee"
+            style="height: 60px !important;width: 217px !important;"
+          />
+        </a>
+      </div>
+
+      <div class="col banner">
+        <p>Check out the source code on GitHub!</p>
+        <a
+          href="https://github.com/guillermodean/pm_suite"
+          target="_blank"
+          class="rounded-button"
+        >
+          <img
+            src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+            alt="GitHub Logo"
+          />
+          <span>Go to Repository</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="guillermodf" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script> -->
+  <!-- <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="guillermodf" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script> -->
+</Layout>
+
+<style>
+  /* src/style.css */
+
+  body {
+    background-color: #1e1e1e;
+    color: white; /* Green console color */
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+  }
+
+  .col {
+  flex: 1;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.main-image {
+  max-width: 100%; /* Make the image responsive to the column width */
+  height: auto;
+  display: block; /* Remove extra space below the image */
+  margin: 0 auto; /* Center the image horizontally in the column */
+}
+
+  .front {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .rounded-button {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background-color: #2d2d2d; /* Background color */
+    color: #ffffff; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding around the content */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .rounded-button:hover {
+    background-color: #333333; /* Change background color on hover */
+  }
+
+  .rounded-button img {
+    width: 30px; /* Set the width of the image */
+    height: auto;
+    margin-right: 10px; /* Add spacing between image and text */
+  }
+
+  .rounded-button span {
+    font-size: 16px; /* Set the font size of the text */
+    line-height: 30px; /* Match the line height to the height of the image */
+  }
+
+  .buyme-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+  }
+
+  .project {
+    padding-top: 1em;
+    padding-bottom: 1rem;
+    background: #1e1e1e;
+  }
+
+  h1,
+  h2 {
+    color: #00ff00;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(120), cursor 0.4s step-end infinite alternate;
+  }
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  a {
+  }
+
+  a:hover {
+    color: #00ff00;
+  }
+</style>

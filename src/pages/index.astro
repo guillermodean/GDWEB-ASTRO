@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="GDWEB.">
   <main>
     <div class="position-relative overflow-hidden text-center front">
       <div
@@ -389,7 +389,7 @@ import Layout from "../layouts/Layout.astro";
   <hr class="featurette-divider" />
 
   <div class="row flex project p-lg-5">
-    <div class="col-md-4 p-1">
+    <div class="col-md-3 p-1">
       <div class="card">
         <img
           class="card-img-top"
@@ -404,13 +404,13 @@ import Layout from "../layouts/Layout.astro";
             Navarra.
           </p>
           <a
-            href="https://megalitos-production.up.railway.app/"
+            href="https://megalitosnavarra.guillermodean.com/"
             class="btn btn-a text-center">Discover</a
           >
         </div>
       </div>
     </div>
-    <div class="col-md-4 p-1">
+    <div class="col-md-3 p-1">
       <div class="card">
         <img class="card-img-top" src="/img/eenavarra.jpg" alt="Megalitos" />
         <div class="card-body text-center">
@@ -425,7 +425,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </div>
-    <div class="col-md-4 p-1">
+    <div class="col-md-3 p-1">
       <div class="card">
         <img class="card-img-top" src="/img/ceviene.jpg" alt="Card image cap" />
         <div class="card-body text-center">
@@ -434,6 +434,21 @@ import Layout from "../layouts/Layout.astro";
           <a
             href="https://humedales.guillermodean.com/"
             class="btn btn-a">Discover</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 p-1">
+      <div class="card">
+        <img class="card-img-top" src="/img/pm-suite.jpg" alt="Megalitos" />
+        <div class="card-body text-center">
+          <h2 class="card-title text-center">
+            PM Suite
+          </h2>
+          <p class="lead">
+            Here, we embark on a journey of collaboration, friendship, and organized chaos. The PM Suite is not just a suite of scripts; it's a testament to our coding adventures and the brilliance of chaos theory.
+          </p>
+          <a href="/pmsuite" class="btn btn-a">Discover</a
           >
         </div>
       </div>
@@ -698,7 +713,30 @@ import Layout from "../layouts/Layout.astro";
     font-size: 130%;
   }
 
+  .nav-item {
+    animation-name: slide linear;
+    animation-duration: 4s;
+    animation-delay:2s;
+    animation-timeline: view();
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-fill-mode: none;
 
+
+  }
+
+  @keyframes slide {
+    from {
+      tranform: translateY(-0.75rem);
+    }
+    to {
+      transform: translateX(0);
+    }
+
+      
+    }
+
+  
   /* --------------------Featurettes------------------------- */
 
   .text-muted {
@@ -719,7 +757,19 @@ import Layout from "../layouts/Layout.astro";
     /* rtl:remove */
     letter-spacing: -0.05rem;
   }
-
+  a {
+      animation: fade linear both;
+      animation-timeline: view();
+      animation-range: entry 50% cover 50%;
+    }
+  @keyframes fade {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
   a {
     color: #0161c6;
     text-decoration: none;
@@ -801,6 +851,20 @@ import Layout from "../layouts/Layout.astro";
   /* --------------------Buttons------------------------- */
   .btn-a {
     background-color: #0161c6;
+    
+  }
+  .btn-a:hover{
+    animation: party 2000ms infinite;
+  }
+  .party{
+    
+  }
+  
+  @keyframes party {
+
+    100%{
+      background-color: #e0ca3c;
+    }
   }
   .feature {
     box-shadow:
@@ -816,11 +880,13 @@ import Layout from "../layouts/Layout.astro";
     height: 100px;
     text-align: center;
     text-decoration: none;
+    transition: transform 500ms
   }
 
   /* Add a hover effect if you want */
   .fa:hover {
     opacity: 0.7;
+    transform: translateY(-0.75rem);
   }
 
   /* Set a specific color for each brand */
@@ -872,7 +938,7 @@ import Layout from "../layouts/Layout.astro";
   }
 
   /* If the screen size is 769px wide or more, set the font-size of <div> to 80px */
-  @media screen and (min-width: 769px) {
+  /* @media screen and (min-width: 769px) {
     .lead {
       font-size: 20px;
     }
@@ -882,12 +948,12 @@ import Layout from "../layouts/Layout.astro";
   }
 
   /* If the screen size is 768px wide or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     .lead {
       font-size: 15px;
     }
     .lead-2 {
       font-size: 13px;
-    }
-  }
+    } 
+  } */
 </style>
